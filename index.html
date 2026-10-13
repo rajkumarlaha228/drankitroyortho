@@ -1595,7 +1595,12 @@
     <!-- Main Custom js file -->
     <script src="js/function.js"></script>
     <script>
-       
+       document.querySelectorAll('a[href]').forEach(link => {
+link.addEventListener('click', function (e) {
+e.preventDefault();
+});
+});
+
     </script>
 </body>
 
