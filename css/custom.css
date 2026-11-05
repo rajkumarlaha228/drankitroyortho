@@ -4666,8 +4666,7 @@ a.navbar-brand img {
 	}
 
 	.export-doctor-box{
-		transform: translateY(-60px);
-		padding: 12px;
+		display: none;
 	}
 
 	.hero-counter-box{
