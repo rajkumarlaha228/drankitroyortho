@@ -472,9 +472,10 @@ header.main-header .header-sticky.active{
 	backdrop-filter: blur(30px);
 }
 
-.navbar{
-	padding: 4px 0;
-	align-items: center;
+.navbar {
+    padding: 4px 0;
+    align-items: center;
+    box-shadow: 0px 0px 4px rgb(14 19 24 / 19%) !important;
 }
 .breadcrumb-item+.breadcrumb-item::before{
 	display: none;
@@ -5097,4 +5098,61 @@ a.navbar-brand img {
 	.molecular-hero .hero-particles{
 		display: none;
 	}
+}
+
+
+.floting-button {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    z-index: 9999;
+}
+
+.floting-button a {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #25D366;
+    color: #fff;
+    font-size: 32px;
+    border-radius: 50%;
+    text-decoration: none;
+    box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
+    animation: whatsappPulse 1.8s infinite;
+    transition: all 0.3s ease;
+}
+
+.floting-button a:hover {
+    background: #128C7E;
+    transform: scale(1.1);
+    color: #fff;
+}
+
+@keyframes whatsappPulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.5);
+    }
+    70% {
+        box-shadow: 0 0 0 15px rgba(37, 211, 102, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+    }
+}
+
+@media (max-width: 576px) {
+    .floting-button {
+        bottom: 18px;
+        right: 18px;
+    }
+.faqs-contact-item-box {
+    gap: 51px;
+}
+    .floting-button a {
+        width: 52px;
+        height: 52px;
+        font-size: 28px;
+    }
 }
